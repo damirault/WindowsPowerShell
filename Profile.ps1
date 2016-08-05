@@ -32,6 +32,12 @@ set-alias mo         measure-object
 set-alias eval       invoke-expression
 set-alias n          vim.exe
 set-alias vi         vim.exe
+set-alias npp        "C:\Program Files (x86)\Notepad++\notepad++.exe"
+set-alias notepad    npp
+
+# Quick directory traversal
+function CC { pushd c:\code }
+function CH { pushd ~ }
 
 # ---------------------------------------------------------------------------
 # Visuals
