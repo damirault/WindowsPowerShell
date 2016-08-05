@@ -60,7 +60,6 @@ function prompt
 	if($WindowTitle) { $title += " - $WindowTitle" }
 
 	$host.ui.rawUi.windowTitle = $title
-	$path = [IO.Path]::GetFileName($path)
 	if(!$path) { $path = '\' }
 
 	# Check for completed background jobs:
@@ -75,8 +74,6 @@ function prompt
 	$private:nextCommand = $private:h[$private:h.Count - 1].Id + 1;
 	Write-Host -NoNewline -ForeGroundColor Red "${private:nextCommand}|";	 
 	
-	Write-Host -NoNewline -ForeGroundColor Blue "${drive}";
-	Write-Host -NoNewline -ForeGroundColor White ":";
 	Write-Host -NoNewline -ForeGroundColor White "$path";
 	
 	# Show GIT Status, if loaded:
