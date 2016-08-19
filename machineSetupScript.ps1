@@ -30,6 +30,7 @@ choco install visualstudiocode -y
 
 # GIT/SSH/Linux
 choco install git.install -y
+choco install gitextensions -y
 choco install putty -y
 choco install cygwin -y
 
